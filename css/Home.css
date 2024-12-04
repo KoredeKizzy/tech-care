@@ -1,0 +1,80 @@
+:root {
+  --btnColor: #01f0d0;
+  --txtColor: #072635;
+  --backgroundColor: #ffffff;
+  --ActiveState: #01f0d0;
+}
+
+.Home1 {
+  gap: 1rem;
+  display: flex;
+  margin-top: 2rem;
+  height: 100vh;
+}
+.Home1 .Home {
+  background: var(--backgroundColor);
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
+  flex: 1;
+}
+.Home1 .Home :hover {
+  background: var(--ActiveState);
+  padding: 0.1rem;
+  transition: all 0.3s ease;
+}
+.Home1 .Home::-webkit-scrollbar {
+  width: 8px;
+}
+.Home1 .Home::-webkit-scrollbar-track {
+  background: var(--backgroundColor);
+  border-radius: 1rem;
+}
+.Home1 .Home::-webkit-scrollbar-thumb {
+  background-color: var(--btnColor);
+  border-radius: 4px;
+  border: 2px solid var(--backgroundColor);
+}
+.Home1 .Home h2 {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+.Home1 .Home .patient {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--btnColor);
+}
+.Home1 .Home .patient img {
+  width: 50px;
+  height: auto;
+}
+.Home1 .Home .patient .description {
+  display: flex;
+  flex-direction: column;
+}
+.Home1 .Home .patient .description .info {
+  display: flex;
+  gap: 0.5rem;
+}
+.Home1 .middle {
+  background: var(--backgroundColor);
+  border-radius: 1rem;
+  padding: 1rem;
+  flex: 2;
+  display: flex;
+}
+.Home1 .Last {
+  background: var(--backgroundColor);
+  border-radius: 1rem;
+  padding: 1rem;
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Home1 .Last img {
+  margin-top: -20rem;
+  transform: scale(3);
+}/*# sourceMappingURL=Home.css.map */

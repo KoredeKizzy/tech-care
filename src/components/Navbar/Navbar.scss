@@ -1,0 +1,70 @@
+:root {
+  --btnColor: #01f0d0;
+  --txtColor: #072635;
+  --backgroundColor: #ffffff;
+  --ActiveState: #01f0d0;
+}
+
+.Header {
+  background: var(--backgroundColor);
+  padding: 0.5rem 0rem 0.5rem;
+  display: flex;
+  border-radius: 1rem;
+
+  img {
+    margin-right: 0.2rem;
+    transform: scale(0.9);
+  }
+
+  .NavB {
+    display: flex;
+    list-style-type: none;
+    font-weight: 1000;
+    font-size: small;
+    align-items: center;
+    margin-left: 10rem;
+    padding: 0rem;
+
+    :hover {
+      background: var(--ActiveState);
+      border-radius: 40rem;
+      transition: all 0.3s ease;
+    }
+
+    .navItem {
+      border: 2px solid transparent;
+      align-items: center;
+      display: flex;
+      padding: 0.6rem 1rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .AdminName {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .AdminText {
+      display: flex;
+      flex-direction: column;
+      border-right: 3px solid var(--ActiveState);
+      justify-content: space-between;
+      padding-right: 0.3rem;
+
+      span:nth-child(1) {
+        font-weight: 900;
+      }
+    }
+
+    .AdminIcon {
+      display: flex;
+      gap: 0.1rem;
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,96 @@
+:root {
+  --btnColor: #01f0d0;
+  --txtColor: #072635;
+  --backgroundColor: #ffffff;
+  --ActiveState: #01f0d0;
+}
+
+.Home1 {
+  gap: 1rem;
+  display: flex;
+  margin-top: 2rem;
+  height: 100vh;
+
+  .Home {
+    background: var(--backgroundColor);
+    border-radius: 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+    flex: 1;
+
+    :hover {
+      background: var(--ActiveState);
+      padding: 0.1rem;
+      transition: all 0.3s ease;
+    }
+
+    // Custom scrollbar styles
+    &::-webkit-scrollbar {
+      width: 8px; // Adjust the width of the scrollbar
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--backgroundColor); // Match the background color
+      border-radius: 1rem; // Optional rounded track to match container
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--btnColor); // Scrollbar color
+      border-radius: 4px; // Rounded edges for the thumb
+      border: 2px solid var(--backgroundColor); // Border to create space within background
+    }
+
+    h2 {
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+
+    .patient {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--btnColor);
+
+      img {
+        width: 50px;
+        height: auto;
+      }
+
+      .description {
+        display: flex;
+        flex-direction: column;
+
+        .info {
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .middle {
+    background: var(--backgroundColor);
+    border-radius: 1rem;
+    padding: 1rem;
+    flex: 2;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+
+  .Last {
+    background: var(--backgroundColor);
+    border-radius: 1rem;
+    padding: 1rem;
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-top: -20rem;
+      transform: scale(3);
+    }
+  }
+}
